@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamunda Online - PVC Card Printing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f2f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            max-width: 400px;
+            width: 100%;
+        }
+        .container h2 {
+            text-align: center;
+            color: #333;
+        }
+        .container p {
+            text-align: center;
+            margin-top: 0;
+            color: #555;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        input, button {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        .whatsapp {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #25d366;
+            color: white;
+            padding: 15px;
+            border-radius: 50%;
+            text-decoration: none;
+            font-size: 24px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Data send to Email</h2>
+        <p></p>
+        <form action="https://formsubmit.co/mpsuthar099@gmail.com" method="POST" enctype="multipart/form-data">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="tel" name="Mobile" placeholder="Your Mobile Number" required>
+            <input type="file" name="File" accept="image/*,application/pdf" required>
+            <button type="submit">Submit Order</button>
+        </form>
+    </div>
+</body>
+</html>
